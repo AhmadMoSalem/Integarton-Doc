@@ -16,11 +16,11 @@ properties:
     example: 0512345678
   latitude:
     description: latitude Maestro Pizza branch  
-    type: double
+    type: number
     example: 46.5485
   longitude:
     description: longitude Maestro Pizza branch  
-    type: double 
+    type: number 
     example: 24.154
   is_active:
     description: is active Maestro Pizza branch 
