@@ -20,8 +20,6 @@ servers:
   - url: 'https://foodics.local/'
   - url: 'https://example.com/api/v1'
 paths:
-  /api/maestro-pizza/orders:
-    $ref: 'paths/users_{username}.yaml'
   /echo:
     $ref: paths/echo.yaml
   /pathItem:
