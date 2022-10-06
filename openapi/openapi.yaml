@@ -1,10 +1,10 @@
 openapi: 3.1.0
 info:
   version: 1.0.0
-  title: Example.com1
+  title: Integration Doc APIs
   termsOfService: 'https://example.com/terms/'
   contact:
-    email: contact@example.com
+    email: a.salem@thechefz.co
     url: 'http://example.com/contact'
   license:
     name: Apache 2.0
@@ -14,21 +14,17 @@ info:
   description:
     $ref: ./info-description.md
 tags:
-  - name: Echo
-    description: Example echo operations.
-  - name: User
-    description: Operations about users.
-  - name: Tag
-    description: This is a tag description.
+  - name: Order
+    description: Create order operations.
 servers:
-  - url: 'https://{tenant}/api/v1'
+  - url: 'https://foodics.local/'
     variables:
       tenant:
         default: www
         description: Your tenant id
   - url: 'https://example.com/api/v1'
 paths:
-  '/users/{username}':
+  'api/maestro-pizza/orders':
     $ref: 'paths/users_{username}.yaml'
   /echo:
     $ref: paths/echo.yaml
