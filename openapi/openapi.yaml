@@ -19,7 +19,7 @@ tags:
 servers:
   - url: 'https://foodics.local'
 paths:
-  /api/v1/orders:
+  /api/maestro-pizza/v1/orders:
     $ref: paths/echo.yaml
   /pathItem:
     $ref: paths/path-item.yaml
