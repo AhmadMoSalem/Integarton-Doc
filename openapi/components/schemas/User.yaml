@@ -1,19 +1,31 @@
 type: object
 properties:
-  username:
-    description: User supplied username
-    type: string
-    minLength: 4
-    example: John78
-  firstName:
+  branch_integration_id:
+    description: Branch id in Maestro Pizza
+    type: integer
+    example: 14
+  name:
     description: User first name
     type: string
     minLength: 1
-    example: John
-  lastName:
+    example: Sami
+  phone:
     description: User last name
-    type: string
-    minLength: 1
-    example: Smith
-  email:
-    $ref: ./Email.yaml
+    type: integer
+    minLength: 10
+    example: 0512345678
+  latitude:
+    description: latitude Maestro Pizza branch  
+    type: double
+    example: 46.5485
+  longitude:
+    description: longitude Maestro Pizza branch  
+    type: double 
+    example: 24.154
+  is_active:
+    description: is active Maestro Pizza branch 
+    type: boolean
+    example: true
+  chef_availabilities:
+    description: Chef availabilities for Maestro Pizza branch  
+    type: array
