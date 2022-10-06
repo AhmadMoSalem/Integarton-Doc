@@ -21,7 +21,7 @@ post:
       content:
         application/json:
           schema:
-            type: string
+             $ref: ../components/schemas/Branch.yaml
           examples:
             response:
               value: Hello world!
@@ -36,8 +36,7 @@ post:
   requestBody:
     content:
       application/json:
-        schema:
-          $ref: ../components/schemas/User.yaml
+
     description: Echo payload
     
     required: true
