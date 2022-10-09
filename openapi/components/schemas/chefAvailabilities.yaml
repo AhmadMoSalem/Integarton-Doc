@@ -1,0 +1,14 @@
+type: object
+properties:
+  day:
+    description: day
+    type: string
+    example: "Monday"
+  close:
+    description: close time
+    type: string
+    example: "02:50"
+  open:
+    description: open time
+    type: string
+    example: "11:45"

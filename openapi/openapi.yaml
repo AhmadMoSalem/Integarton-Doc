@@ -1,0 +1,44 @@
+openapi: 3.1.0
+info:
+  version: 1.0.0
+  title: Integration Doc APIs
+  termsOfService: 'https://example.com/terms/'
+  contact:
+    email: a.salem@thechefz.co
+    url: 'http://example.com/contact'
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+  x-logo:
+    url: 'https://media.thechefz.co/reservation_email/reservation/banner.png'
+  description:
+    $ref: ./info-description.md
+tags:
+  - name: Order
+    description: Create order operations.
+servers:
+  - url: 'https://foodics.local'
+paths:
+  /api/maestro-pizza/v1/orders:
+    $ref: paths/echo.yaml
+  /pathItem:
+    $ref: paths/path-item.yaml
+  /pathItemWithExamples:
+    $ref: paths/path-item-with-examples.yaml
+components:
+  securitySchemes:
+    main_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: 'http://example.com/api/oauth/dialog'
+          scopes:
+            'read:users': read users info
+            'write:users': modify or remove users
+    api_key:
+      type: apiKey
+      in: header
+      name: api_key
+    basic_auth:
+      type: http
+      scheme: basic

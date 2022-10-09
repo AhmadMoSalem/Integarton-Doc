@@ -1,0 +1,46 @@
+post:
+  tags:
+    - Order
+  summary: Order
+  description: Create Orders in Maestro Pizza
+  operationId: echo
+  security:
+    - api_key: []
+    - basic_auth: []
+  responses:
+    '200':
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+        X-Expires-After:
+          $ref: ../components/headers/ExpiresAfter.yaml
+      content:
+        application/json:
+          schema:
+             $ref: ../components/schemas/Branch.yaml
+          examples:
+            response:
+              value: Hello world!
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+
+    description: Echo payload
+    
+    required: true
+  x-codeSamples:
+    - lang: PHP
+      source:
+        $ref: ../code_samples/PHP/echo/post.php
