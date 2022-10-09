@@ -34,8 +34,6 @@ post:
     '400': 
       description: Unauthorized
   requestBody:
-    content:
-      application/json:
 
     description: Echo payload
     
