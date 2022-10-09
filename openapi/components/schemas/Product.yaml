@@ -1,0 +1,19 @@
+type: object
+properties:
+  ProductCode:
+    description: chef id in Portal2
+    type: string
+    example: AGFGBET1022
+  Quantity:
+    description: Order id in Portal2
+    type: integer
+    example: 1
+  Topping:
+    description: set of Toppings (+ add topping ), (- sub topping)
+    type: string
+    example: +SFCRF0010+RMSEA0027+671LESS+SW101+SFSAC0009
+  Price:
+    description: Product price include toppings price
+    type: integer
+    example: 2
+

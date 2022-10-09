@@ -1,0 +1,39 @@
+type: object
+properties:
+  portal_chef_id:
+    description: chef id in Portal2
+    type: integer
+    example: 10108046
+  portal_order_id:
+    description: Order id in Portal2
+    type: integer
+    example: 24419771
+  BranchCode:
+    description: Branch id in MAestro Pizza
+    type: integer
+    example: 14
+  DeliveryDate:
+    description: Delivery date 
+    type: string
+    example: 2022-10-02 11:01:00
+  Phone:
+    description: Customer phone
+    type: string 
+    example: 0512345671
+  PayTypeCode:
+    description: Payment method id in Maestro Pizza for The Chefz
+    type: integer
+    example: 41
+  TotalAmount:
+    description: Total amount order
+    type: number
+    example: 50
+  OrderType:
+    description: /'D' (delivery) | 'P' (pick up) from maestro pizza perspective
+    type: string
+    example: P
+  TicketLines:
+    description: Order Products 
+    type: array
+    items:
+      $ref: Product.yaml

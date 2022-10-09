@@ -33,7 +33,7 @@ post:
             type: string
     '400': 
       description: Unauthorized
-  requestBody:
+  responseBody:
     content:
       application/json:
         schema:
