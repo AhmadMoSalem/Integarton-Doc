@@ -1,0 +1,15 @@
+type: object
+properties:
+  modifier_option_id:
+    description: Modifier option id in Foodics
+    type: string
+    example: "968c9e93-1a91-453e-819c-24ccb4a12345"
+  quantity:
+    description: Quantity of modifier option
+    type: integer
+    example: 1
+  unit_price:
+    description: Modifier option price
+    type: string
+    example: "4.00"
+

@@ -8,15 +8,14 @@ properties:
     description: Order id in Portal2
     type: integer
     example: 24419771
-  # meta:
-  #   description: Addition details for Foodics Order
-  #   type: object
-  #   title: meta
-  #   properties:
-  #     external_number:
-  #     description: Order id in Portal2
-  #     type: integer
-  #     example: 24419771
+  meta:
+    type: object
+    title: meta
+    properties:
+      external_number:
+        description: Order id in Portal2
+        type: integer
+        example: 24419771
   branch_id:
     description: Branch id in Foodics
     type: string

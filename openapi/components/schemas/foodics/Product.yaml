@@ -16,4 +16,9 @@ properties:
     description: Product notes
     type: string
     example: "Without onion"
+  options:
+    description: List of Modifier option for a product 
+    type: array
+    items:
+      $ref: Option.yaml
 
