@@ -6,7 +6,7 @@ properties:
     example: "Monday"
   close:
     description: close time
-    type: string
+    type: string 
     example: "02:50"
   open:
     description: open time
