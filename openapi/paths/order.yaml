@@ -3,7 +3,7 @@ post:
     - Order
   summary: Order
   description: Create Order in Maestro Pizza
-  operationId: branch
+  operationId: MaestroPizzaOrder
   security:
     - api_key: []
     - basic_auth: []
