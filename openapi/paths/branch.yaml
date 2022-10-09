@@ -33,7 +33,6 @@ post:
             type: string
     '400': 
       description: Unauthorized
-    required: true
   x-codeSamples:
     - lang: PHP
       source:
