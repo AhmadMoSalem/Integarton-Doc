@@ -33,6 +33,14 @@ post:
             type: string
     '400': 
       description: Unauthorized
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/Branch.yaml
+    description: Echo payload
+    
+    required: true
   x-codeSamples:
     - lang: PHP
       source:
