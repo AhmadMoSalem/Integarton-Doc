@@ -11,7 +11,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/foodics/Order.yaml
+          $ref: ../components/schemas/foodics/order.yaml
         examples:
           mapName:
             summary: My first example
@@ -32,8 +32,6 @@ post:
           schema:
             type: integer
             format: int32
-        X-Expires-After:
-          $ref: ../components/headers/ExpiresAfter.yaml
       content:
         application/json:
           examples:
@@ -47,7 +45,3 @@ post:
             type: string
     '400': 
       description: Unauthorized
-  x-codeSamples:
-    - lang: PHP
-      source:
-        $ref: ../code_samples/PHP/echo/post.php
