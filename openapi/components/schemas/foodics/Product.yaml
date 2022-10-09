@@ -1,0 +1,19 @@
+type: object
+properties:
+  product_id:
+    description: product id in Foodics
+    type: string
+    example: "_d72ad897"
+  quantity:
+    description: Quantity of product
+    type: integer
+    example: 1
+  unit_price:
+    description: Product price
+    type: string
+    example: "40.00"
+  kitchen_notes:
+    description: Product notes
+    type: string
+    example: "Without onion"
+

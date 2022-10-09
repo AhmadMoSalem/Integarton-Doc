@@ -1,0 +1,49 @@
+type: object
+properties:
+  portal_chef_id:
+    description: chef id in Portal2
+    type: integer
+    example: 10108046
+  portal_order_id:
+    description: Order id in Portal2
+    type: integer
+    example: 24419771
+  meta:
+    description: Addition details for Foodics Order
+    type: object
+    properties:
+      external_number:
+      description: Order id in Portal2
+      type: integer
+      example: 24419771
+    example: "54.00"
+  branch_id:
+    description: Branch id in Foodics
+    type: string
+    example: "94810310-89ea-4ce9-9735-743e6ca586cf"
+  type:
+    description: delivery order (3) , pickup order (2)
+    type: integer
+    example: 3
+  customer_id:
+    description: Customer id in Foodics
+    type: string 
+    example: "968caed2-e9fe-4806-91e5-7d71a8404b66"
+  customer_address_id:
+    description: Customer address id in Foodics
+    type: string
+    example: "968caed4-6971-4231-a058-64e2155e8ee6"
+  payments:
+    description: Order Products 
+    type: array
+    items:
+      $ref: Payment.yaml
+  products:
+    description: Order Products 
+    type: array
+    items:
+      $ref: Product.yaml
+  total_price:
+    description: Total price products and modifier options
+    type: string
+    example: "54.00"
