@@ -2,8 +2,8 @@ post:
   tags:
     - Order
   summary: Order
-  description: Create Order in Maestro Pizza
-  operationId: MaestroPizzaOrder
+  description: Create Order in Foodics
+  operationId: FoodicsCreateOrder
   security:
     - api_key: []
     - basic_auth: []
