@@ -1,9 +1,9 @@
 post:
   tags:
-    - Order
-  summary: Order
-  description: Create Orders in Maestro Pizza
-  operationId: echo
+    - Branch
+  summary: Branch
+  description: Get all branches in Maestro Pizza
+  operationId: branch
   security:
     - api_key: []
     - basic_auth: []
@@ -38,7 +38,6 @@ post:
       application/json:
         schema:
           $ref: ../components/schemas/Branch.yaml
-    description: Echo payload
     
     required: true
   x-codeSamples:
