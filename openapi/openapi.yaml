@@ -23,10 +23,25 @@ paths:
     $ref: paths/branch.yaml
   /api/maestro-pizza/v1/orders:
     $ref: paths/order.yaml
+  /api/maestro-pizza/v1/orders1:
+    $ref: paths/update_order_status.yaml 
   /pathItem:
     $ref: paths/path-item.yaml
   /pathItemWithExamples:
     $ref: paths/path-item-with-examples.yaml
+drilldown-style:
+  - group: Rock
+    menuStyle: drilldown
+    pages:
+      - page: openapi/rock.page.yaml/*
+  - group: Paper
+    menuStyle: drilldown
+    pages:
+      - page: openapi/paper.page.yaml/*
+  - group: Scissors
+    menuStyle: drilldown
+    pages:
+      - page: openapi/scissors.page.yaml/*
 components:
   securitySchemes:
     main_auth:

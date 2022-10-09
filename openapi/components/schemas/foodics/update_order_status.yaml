@@ -1,0 +1,11 @@
+type: object
+properties:
+  portal_user_id:
+    description: user id in Portal2
+    type: integer
+    example: 10108046
+  status:
+    description: Order status
+    type: integer
+    example: 3
+
