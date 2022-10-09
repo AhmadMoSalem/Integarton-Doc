@@ -30,4 +30,4 @@ properties:
     description: Chef availabilities for Maestro Pizza branch  
     type: array
     items:
-      $ref: ChefAvailabilities.yaml
+      $ref: ChefAvailabilities_json.yaml
