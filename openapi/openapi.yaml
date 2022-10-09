@@ -29,19 +29,6 @@ paths:
     $ref: paths/path-item.yaml
   /pathItemWithExamples:
     $ref: paths/path-item-with-examples.yaml
-firstSidebar:
-  - group: Rock
-    menuStyle: drilldown
-    pages:
-      - page: openapi/rock.page.yaml/*
-  - group: Paper
-    menuStyle: drilldown
-    pages:
-      - page: openapi/paper.page.yaml/*
-  - group: Scissors
-    menuStyle: drilldown
-    pages:
-      - page: openapi/scissors.page.yaml/*
 components:
   securitySchemes:
     main_auth:
