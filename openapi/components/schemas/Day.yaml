@@ -1,0 +1,18 @@
+type: object
+properties:
+  Opening1:
+    description: open time
+    type: string
+    example: "11:00:00"
+  Closing1:
+    description: close time
+    type: string  
+    example: "00:45:00"
+  Opening2:
+    description: open time
+    type: string
+    example: "00:00:00"
+  Closing2:
+    description: close time
+    type: string
+    example: "00:00:00"
