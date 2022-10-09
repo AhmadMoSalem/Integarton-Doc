@@ -8,12 +8,11 @@ post:
     - api_key: []
     - basic_auth: []
   parameters:
-    - name: username
-      in: path
-      description: The name that needs to be fetched
-      required: true
-      schema:
-        type: string
+    # - name: username
+    #   description: The name that needs to be fetched
+    #   required: true
+    #   schema:
+    #     type: string
   responses:
     '200':
       description: OK

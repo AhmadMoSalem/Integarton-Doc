@@ -22,12 +22,12 @@ paths:
   /api/v1/foodics/categories:
     $ref: paths/foodics/category.yaml
   /api/v1/foodics/branches:
-    $ref: paths/foodics/cbranch.yaml
+    $ref: paths/foodics/branch.yaml
   /api/v1/foodics/orders:
     post:
-      $ref: paths/foodics/corder.yaml
+      $ref: paths/foodics/order.yaml
     put:
-      $ref: paths/foodics/cupdate_order.yaml 
+      $ref: paths/foodics/update_order.yaml 
   /pathItem:
     $ref: paths/path-item.yaml
   /pathItemWithExamples:
