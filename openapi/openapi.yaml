@@ -19,12 +19,15 @@ tags:
 servers:
   - url: 'https://foodics.local'
 paths:
-  /api/maestro-pizza/v1/branches:
+  /api/v1/foodics/branches:
     $ref: paths/branch.yaml
-  /api/maestro-pizza/v1/orders:
-    $ref: paths/order.yaml
-  /api/maestro-pizza/v1/orders1:
-    $ref: paths/update_order_status.yaml 
+  /api/v1/foodics/orders:
+    post:
+      $ref: paths/order.yaml
+  /:
+    put:
+      /api/v1/foodics/orders:
+      $ref: paths/update_order.yaml 
   /pathItem:
     $ref: paths/path-item.yaml
   /pathItemWithExamples:
