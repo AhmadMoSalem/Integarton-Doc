@@ -2,7 +2,7 @@ type: object
 properties:
   day:
     description: day
-    type: string
+    type: array
     example: "Monday"
     items:
       $ref: Day.yaml
