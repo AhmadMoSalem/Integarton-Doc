@@ -19,6 +19,8 @@ tags:
 servers:
   - url: 'https://foodics.local'
 paths:
+  /api/v1/foodics/categories:
+    $ref: paths/category.yaml
   /api/v1/foodics/branches:
     $ref: paths/branch.yaml
   /api/v1/foodics/orders:

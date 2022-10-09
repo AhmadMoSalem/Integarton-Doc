@@ -1,0 +1,46 @@
+post:
+  tags:
+    - Category
+  summary: Category
+  description: Get all categories in Foodics for specific restaurant
+  operationId: FoodicsCategory
+  security:
+    - api_key: []
+    - basic_auth: []
+  parameters:
+    - name: username
+      in: path
+      description: The name that needs to be fetched
+      required: true
+      schema:
+        type: string
+  responses:
+    '200':
+      description: OK
+      headers:
+        X-Rate-Limit:
+          description: calls per hour allowed by the user
+          schema:
+            type: integer
+            format: int32
+        X-Expires-After:
+          $ref: ../components/headers/ExpiresAfter.yaml
+      content:
+        application/json:
+          schema:
+             $ref: ../components/schemas/foodics/branch.yaml
+          examples:
+            response:
+              value: Hello world!
+        application/xml:
+          schema:
+            type: string
+        text/csv:
+          schema:
+            type: string
+    '400': 
+      description: Unauthorized
+  x-codeSamples:
+    - lang: PHP
+      source:
+        $ref: ../code_samples/PHP/echo/post.php
