@@ -21,6 +21,8 @@ servers:
 paths:
   /api/maestro-pizza/v1/branches:
     $ref: paths/branch.yaml
+  /api/maestro-pizza/v1/orders:
+    $ref: paths/order.yaml
   /pathItem:
     $ref: paths/path-item.yaml
   /pathItemWithExamples:
