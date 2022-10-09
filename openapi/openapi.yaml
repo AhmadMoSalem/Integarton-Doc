@@ -23,13 +23,9 @@ paths:
     $ref: paths/branch.yaml
   /api/v1/foodics/orders:
     post:
-       callbacks:
-        result:
-          $ref: paths/order.yaml
+      $ref: paths/order.yaml
     put:
-      callbacks:
-        result:
-          $ref: paths/update_order.yaml 
+      $ref: paths/update_order.yaml 
   /pathItem:
     $ref: paths/path-item.yaml
   /pathItemWithExamples:
