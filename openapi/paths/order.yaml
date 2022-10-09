@@ -7,6 +7,22 @@ post:
   security:
     - api_key: []
     - basic_auth: []
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: ../components/schemas/Order.yaml
+        examples:
+          mapName:
+            summary: My first example
+            description: My first example's description.
+            value:
+              stringProperty: tada
+          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+            value:
+              stringProperty: checkmark
+    description: requestBody description
+    required: true
   responses:
     '200':
       description: OK
@@ -20,8 +36,6 @@ post:
           $ref: ../components/headers/ExpiresAfter.yaml
       content:
         application/json:
-          schema:
-             $ref: ../components/schemas/Branch.yaml
           examples:
             response:
               value: Hello world!
