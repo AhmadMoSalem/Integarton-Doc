@@ -29,3 +29,5 @@ properties:
   chef_availabilities:
     description: Chef availabilities for Maestro Pizza branch  
     type: array
+    schema:
+      $ref: ../components/schemas/chefAvailabilities.yaml
