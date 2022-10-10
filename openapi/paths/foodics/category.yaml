@@ -22,12 +22,10 @@ post:
           schema:
             type: integer
             format: int32
-        X-Expires-After:
-          $ref: ../components/headers/ExpiresAfter.yaml
       content:
         application/json:
           schema:
-             $ref: ../components/schemas/foodics/branch.yaml
+             $ref: ../../components/schemas/foodics/branch.yaml
           examples:
             response:
               value: Hello world!
@@ -42,4 +40,4 @@ post:
   x-codeSamples:
     - lang: PHP
       source:
-        $ref: ../code_samples/PHP/echo/post.php
+        $ref: ../../code_samples/PHP/echo/post.php

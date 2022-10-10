@@ -12,7 +12,8 @@ info:
   x-logo:
     url: 'https://media.thechefz.co/reservation_email/reservation/banner.png'
   description:
-    $ref: ./info-description.md
+     sad
+  #   $ref: ./info-description.md
 tags:
   - name: Order
     description: Create order operations.
@@ -28,8 +29,9 @@ paths:
     $ref: paths/foodics/order.yaml
     # post:
     #   $ref: paths/foodics/order.yaml
-  put:
-    $ref: paths/foodics/update_order.yaml 
+  /:
+    put:
+      $ref: paths/foodics/update_order.yaml 
   /pathItem:
     $ref: paths/path-item.yaml
   /pathItemWithExamples:

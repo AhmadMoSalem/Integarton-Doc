@@ -1,4 +1,4 @@
-# put:
+
   tags:
     - Order
   summary: Order
@@ -11,7 +11,7 @@
     content:
       application/json:
         schema:
-          $ref: ../components/schemas/foodics/update_order_status.yaml
+          $ref: ../../components/schemas/foodics/update_order.yaml
         examples:
           mapName:
             summary: My first example
@@ -32,8 +32,6 @@
           schema:
             type: integer
             format: int32
-        X-Expires-After:
-          $ref: ../components/headers/ExpiresAfter.yaml
       content:
         application/json:
           examples:
@@ -50,4 +48,4 @@
   x-codeSamples:
     - lang: PHP
       source:
-        $ref: ../code_samples/PHP/echo/post.php
+        $ref: ../../code_samples/PHP/echo/post.php
