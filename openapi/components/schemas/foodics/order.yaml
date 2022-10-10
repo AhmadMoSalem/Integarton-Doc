@@ -36,12 +36,12 @@ properties:
     description: Order Products 
     type: array
     items:
-      $ref: Payment.yaml
+      $ref: payment.yaml
   products:
     description: Order Products 
     type: array
     items:
-      $ref: Product.yaml
+      $ref: product.yaml
   total_price:
     description: Total price products and modifier options
     type: string
