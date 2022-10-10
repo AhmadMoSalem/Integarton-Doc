@@ -1,4 +1,4 @@
-# post:
+get:
   tags:
     - Branch
   summary: Branch
@@ -8,7 +8,7 @@
     - api_key: []
     - basic_auth: []
   responses:
-    '200':
+    "200":
       description: OK
       headers:
         X-Rate-Limit:
@@ -19,16 +19,6 @@
       content:
         application/json:
           schema:
-             $ref: ../components/schemas/foodics/branch.yaml
-          examples:
-            response:
-              value: Hello world!
-        application/xml:
-          schema:
-            type: string
-        text/csv:
-          schema:
-            type: string
-    '400': 
+            $ref: ../../components/schemas/foodics/branch.yaml
+    "400":
       description: Unauthorized
-

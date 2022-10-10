@@ -1,16 +1,16 @@
 get:
   tags:
     - Menu
-  summary: Category
-  description: Get all categories in Foodics for specific restaurant
-  operationId: FoodicsCategory
+  summary: Product
+  description: Get all products in Foodics for specific restaurant and category from menu
+  operationId: FoodicsProduct
   security:
     - api_key: []
     - basic_auth: []
   parameters:
     - name: id
       in: query
-      description: Portal chef id
+      description: Foodics category id
       required: true
       schema:
         type: string
@@ -21,7 +21,7 @@ get:
       schema:
         type: string
   responses:
-    "200":
+    '200':
       description: OK
       headers:
         X-Rate-Limit:
@@ -32,14 +32,14 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/foodics/branch.yaml
+             $ref: ../../components/schemas/foodics/branch.yaml
         application/xml:
           schema:
             type: string
         text/csv:
           schema:
             type: string
-    "400":
+    '400': 
       description: Unauthorized
   x-codeSamples:
     - lang: PHP

@@ -15,14 +15,14 @@ properties:
     minLength: 10
     example: 0512345678
   latitude:
-    description: latitude Foodics branch  
+    description: latitude Foodics branch
     type: number
     example: 46.5485
   longitude:
-    description: longitude Foodics branch  
-    type: number 
+    description: longitude Foodics branch
+    type: number
     example: 24.154
   is_active:
-    description: is active Foodics branch 
+    description: is active Foodics branch
     type: boolean
     example: true

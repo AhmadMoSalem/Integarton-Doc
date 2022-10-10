@@ -1,47 +1,46 @@
-
-  tags:
-    - Order
-  summary: Order
-  description: Create Order in Foodics
-  operationId: FoodicsCreateOrder
-  security:
-    - api_key: []
-    - basic_auth: []
-  requestBody:
+tags:
+  - Order
+summary: Order
+description: Create Order in Foodics
+operationId: FoodicsCreateOrder
+security:
+  - api_key: []
+  - basic_auth: []
+requestBody:
+  content:
+    application/json:
+      schema:
+        $ref: ../../components/schemas/foodics/order.yaml
+      examples:
+        mapName:
+          summary: My first example
+          description: My first example's description.
+          value:
+            stringProperty: tada
+        mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+          value:
+            stringProperty: checkmark
+  description: requestBody description
+  required: true
+responses:
+  "200":
+    description: OK
+    headers:
+      X-Rate-Limit:
+        description: calls per hour allowed by the user
+        schema:
+          type: integer
+          format: int32
     content:
       application/json:
-        schema:
-          $ref: ../../components/schemas/foodics/order.yaml
         examples:
-          mapName:
-            summary: My first example
-            description: My first example's description.
-            value:
-              stringProperty: tada
-          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
-            value:
-              stringProperty: checkmark
-    description: requestBody description
-    required: true
-  responses:
-    '200':
-      description: OK
-      headers:
-        X-Rate-Limit:
-          description: calls per hour allowed by the user
-          schema:
-            type: integer
-            format: int32
-      content:
-        application/json:
-          examples:
-            response:
-              value: Hello world!
-        application/xml:
-          schema:
-            type: string
-        text/csv:
-          schema:
-            type: string
-    '400': 
-      description: Unauthorized
+          response:
+            value: Hello world!
+      application/xml:
+        schema:
+          type: string
+      text/csv:
+        schema:
+          type: string
+  "400":
+    description: Unauthorized
