@@ -1,0 +1,16 @@
+type: object
+properties:
+  Code:
+    description: product id in Foodics
+    type: string
+    example: "_d72ad897"
+  Qty:
+    description: Quantity of product
+    type: integer
+    example: 1
+  Options:
+    description: List of Modifier option for a product 
+    type: array
+    items:
+      $ref: option.yaml
+

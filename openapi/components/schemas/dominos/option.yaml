@@ -1,0 +1,7 @@
+type: object
+properties:
+  LGPPEX:
+    description: Product item id in Dominos
+    type: integer
+    example: 1
+

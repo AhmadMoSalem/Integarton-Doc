@@ -1,6 +1,6 @@
 get:
   tags:
-    - Menu
+    - Foodics Menu
   summary: Modifier
   description: Get all modifiers in Foodics for specific restaurant and product from menu
   operationId: FoodicsModifier

@@ -1,0 +1,12 @@
+type: object
+properties:
+  Type:
+    description: Type payment for The Chefz
+    type: string
+    example: "thechefz_cr"
+  Amount:
+    description: Payment method id in Foodics (Each restaurant from Foodics must has payment method for The Chefz)
+    type: integer
+    example: 55.00
+
+

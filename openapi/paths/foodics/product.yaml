@@ -1,6 +1,6 @@
 get:
   tags:
-    - Menu
+    - Foodics Menu
   summary: Product
   description: Get all products in Foodics for specific restaurant and category from menu
   operationId: FoodicsProduct

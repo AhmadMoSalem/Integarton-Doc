@@ -1,0 +1,34 @@
+tags:
+  - Dominos Order
+summary: Order
+description: Create Order in Dominos
+operationId: DominosCreateOrder
+security:
+  - api_key: []
+  - basic_auth: []
+requestBody:
+  content:
+    application/json:
+      schema:
+        $ref: ../../components/schemas/dominos/order.yaml
+  description: requestBody description
+  required: true
+responses:
+  "200":
+    description: OK
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/dominos/response/success.yaml
+  "400":
+    description: Error from Dominos
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/response/unauthorized.yaml
+  "401":
+    description: Unauthorized
+    content:
+      application/json:
+        schema:
+          $ref: ../../components/schemas/response/unauthorized.yaml

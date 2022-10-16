@@ -8,7 +8,7 @@ properties:
     description: User first name
     type: string
     minLength: 1
-    example: Sami
+    example: Al yasmean
   phone:
     description: User last name
     type: integer

@@ -1,0 +1,24 @@
+type: object
+properties:
+  branch_id:
+    description: Branch id in Kudu
+    type: integer
+    example: 14
+  name:
+    description: Name Kudu Branch
+    type: string
+    minLength: 1
+    example: Al yasmean
+  phone:
+    description: Phone Kudu Branch
+    type: integer
+    minLength: 10
+    example: 0512345678
+  latitude:
+    description: Latitude Kudu branch
+    type: number
+    example: 46.5485
+  longitude:
+    description: Longitude Kudu branch
+    type: number
+    example: 24.154

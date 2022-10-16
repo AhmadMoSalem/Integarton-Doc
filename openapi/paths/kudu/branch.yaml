@@ -1,9 +1,9 @@
 get:
   tags:
-    - Foodics Branch
+    - Kudu Branch
   summary: Branch
-  description: Get all branches in Foodics for specific restaurant
-  operationId: FoodicsBranch
+  description: Get all branches in Kudu
+  operationId: KuduBranch
   security:
     - api_key: []
     - basic_auth: []
@@ -19,6 +19,6 @@ get:
       content:
         application/json:
           schema:
-            $ref: ../../components/schemas/foodics/branch.yaml
+            $ref: ../../components/schemas/kudu/branch.yaml
     "400":
       description: Unauthorized

@@ -1,0 +1,62 @@
+type: object
+properties:
+  portal_user_id:
+    description: Chef id in Portal2
+    type: integer
+    example: 10108046
+  OrderID:
+    description: Order id in Portal2
+    type: string
+    example: 24419771
+  StoreID:
+    description: Store id in Dominos
+    type: integer
+    example: 11
+  FirstName:
+    description: Customer first name
+    type: string
+    example: Ahmad
+  LastName:
+    description: Customer last name
+    type: string
+    example: ""
+  AggregatorDelivery:
+    type: boolean
+    example: true
+  CustomerComment:
+    description: Customer comment in Dominos
+    type: string
+    example: "The Chefz : 24419771"
+  Phone:
+    description: Customer phone id in Dominos
+    type: string
+    example: "+966533327018"
+  Email:
+    description: Customer phone id in Dominos
+    type: string
+    example: "customer@thechefz.co"
+  Address:
+    description: Order Products
+    type: object
+    properties:
+      Coordinates:
+        type: object
+        properties:
+          Latitude:
+            description: Customer Latitude
+            type: string
+            example: "24.7136"
+          Longitude:
+            description: Customer Longitude
+            type: string
+            example: "46.6753"
+  Payments:
+    description: Order Products
+    type: array
+    items:
+      $ref: payment.yaml
+  Products:
+    description: Order Products
+    type: array
+    items:
+      $ref: product.yaml

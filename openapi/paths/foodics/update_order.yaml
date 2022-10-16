@@ -1,51 +1,58 @@
 
-  tags:
-    - Order
-  summary: Order
-  description: Update Order in Foodics
-  operationId: FoodicsUpdateOrder
-  security:
-    - api_key: []
-    - basic_auth: []
-  requestBody:
+tags:
+  - Foodics Order
+summary: Order
+description: Update Order in Foodics
+operationId: FoodicsUpdateOrder
+security:
+  - api_key: []
+  - basic_auth: []
+parameters: 
+  - name: id
+    in: path
+    description: Portal order id
+    required: true
+    schema:
+      type: string
+requestBody:
+  content:
+    application/json:
+      schema:
+        $ref: ../../components/schemas/foodics/update_order.yaml
+      examples:
+        mapName:
+          summary: My first example
+          description: My first example's description.
+          value:
+            stringProperty: tada
+        mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
+          value:
+            stringProperty: checkmark
+  description: requestBody description
+  required: true
+responses:
+  "200":
+    description: OK
+    headers:
+      X-Rate-Limit:
+        description: calls per hour allowed by the user
+        schema:
+          type: integer
+          format: int32
     content:
       application/json:
-        schema:
-          $ref: ../../components/schemas/foodics/update_order.yaml
         examples:
-          mapName:
-            summary: My first example
-            description: My first example's description.
-            value:
-              stringProperty: tada
-          mapNameDoesNotShowInDocsUnlessSummaryIsNotProvided:
-            value:
-              stringProperty: checkmark
-    description: requestBody description
-    required: true
-  responses:
-    '200':
-      description: OK
-      headers:
-        X-Rate-Limit:
-          description: calls per hour allowed by the user
-          schema:
-            type: integer
-            format: int32
-      content:
-        application/json:
-          examples:
-            response:
-              value: Hello world!
-        application/xml:
-          schema:
-            type: string
-        text/csv:
-          schema:
-            type: string
-    '400': 
-      description: Unauthorized
-  x-codeSamples:
-    - lang: PHP
-      source:
-        $ref: ../../code_samples/PHP/echo/post.php
+          response:
+            value: Hello world!
+      application/xml:
+        schema:
+          type: string
+      text/csv:
+        schema:
+          type: string
+  "400":
+    description: Unauthorized
+x-codeSamples:
+  - lang: PHP
+    source:
+      $ref: ../../code_samples/PHP/echo/post.php

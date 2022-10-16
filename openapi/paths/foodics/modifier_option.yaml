@@ -1,7 +1,7 @@
 get:
   tags:
-    - Menu
-  summary: Category
+    - Foodics Menu
+  summary: Modifier Option
   description: Get all modifier options in Foodics for specific restaurant and modifier from menu
   operationId: FoodicsModifierOption
   security:
